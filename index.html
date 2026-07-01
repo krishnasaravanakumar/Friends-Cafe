@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Cafe | Artisan Cafe & Coffee House</title>
+    <meta name="description"
+        content="Experience artisan coffee, handcrafted pastries, and a warm, cozy atmosphere at Friends Cafe. Customize your perfect brew or book a table today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 36 36" width="36" height="36" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="18" r="16" stroke="rgba(212, 175, 55, 0.25)" stroke-dasharray="2.5 2.5">
+                    </circle>
+                    <path d="M14 19a3 3 0 0 1-3 3H9.5a3 3 0 0 1-3-3v-5h7.5v5z" fill="rgba(212, 175, 55, 0.08)"></path>
+                    <path d="M6.5 16H5a1.5 1.5 0 0 0-1.5 1.5v1A1.5 1.5 0 0 0 5 20h1.5"></path>
+                    <path d="M29.5 19a3 3 0 0 1-3 3h-1.5a3 3 0 0 1-3-3v-5h7.5v5z" fill="rgba(212, 175, 55, 0.08)">
+                    </path>
+                    <path d="M29.5 16h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1.5"></path>
+                    <path d="M13 11.5c0-2 2-3.5 5-1 3-2.5 5-1 5 1s-3 3-5 4c-2-1-5-2-5-4z" stroke="var(--accent)"
+                        stroke-width="1.8" fill="rgba(212, 175, 55, 0.12)"></path>
+                </svg>
+                <span>Friends <span class="logo-accent">Cafe</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#customizer" class="nav-link">Customizer</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#reservation" class="btn btn-primary btn-sm">Book a Table</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12" id="line1"></line>
+                        <line x1="3" y1="6" x2="21" y2="6" id="line2"></line>
+                        <line x1="3" y1="18" x2="21" y2="18" id="line3"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Est. 2020 • Specialty Brews</span>
+            <h1 class="hero-title">Crafting Moments, One Sip at a Time</h1>
+            <p class="hero-description">Welcome to Friends Cafe, where artisan roasting meets a warm, cozy retreat.
+                Discover our curated single-origin coffees and freshly baked pastries.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#customizer" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-right: 8px; vertical-align: middle;">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    Design Your Drink
+                </a>
+            </div>
+        </div>
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </a>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+                            alt="Barista crafting fresh pour-over coffee" class="about-img" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="badge-num">100%</span>
+                            <span class="badge-text">Organic Arabica</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-wrapper">
+                    <span class="section-tagline">Our Heritage</span>
+                    <h2 class="section-title">Rooted in Passion, Brewed with Care</h2>
+                    <p class="about-lead">We believe that every cup of coffee tells a story. From the high-altitude
+                        farms of Ethiopia and Colombia to our custom in-house roaster, we select only the finest beans.
+                    </p>
+                    <p class="about-body">At Friends Cafe, we cultivate a sanctuary for coffee lovers and creatives
+                        alike. Whether you are searching for a quiet corner to write, catching up with close friends, or
+                        simply grabbing your morning fuel, we welcome you with warmth and the aroma of freshly ground
+                        perfection.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="feature-title">Ethically Sourced</h4>
+                                <p class="feature-desc">We work directly with small-batch farmers guaranteeing fair
+                                    wages.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2v20M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="feature-title">Roasted In-House</h4>
+                                <p class="feature-desc">Roasting small micro-lots weekly to extract unique flavor
+                                    profiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">Traditional Delights</span>
+                <h2 class="section-title">Explore Our Curated Menu</h2>
+                <p class="section-subtitle">Freshly brewed Kumbakonam coffee, warm herbal teas, and traditional Tamil
+                    Nadu snacks crafted daily.</p>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="hot">Hot Brews</button>
+                <button class="filter-btn" data-filter="cold">Coolers</button>
+                <button class="filter-btn" data-filter="tea">Traditional Tea</button>
+                <button class="filter-btn" data-filter="bakery">Snacks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Kumbakonam Filter Coffee -->
+                <div class="menu-card" data-category="hot">
+                    <div class="menu-item-price">₹40</div>
+                    <h3 class="menu-item-title">Kumbakonam Degree Coffee</h3>
+                    <p class="menu-item-desc">Authentic frothed degree coffee brewed from premium chicory-mixed coffee
+                        decoction in brass filter, mixed with pure boiling cow's milk.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Signature</span>
+                        <a href="#customizer" class="customize-link-btn" data-drink="filter-coffee">Customize <span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Karupatti Coffee -->
+                <div class="menu-card" data-category="hot">
+                    <div class="menu-item-price">₹50</div>
+                    <h3 class="menu-item-title">Traditional Karupatti Coffee</h3>
+                    <p class="menu-item-desc">Healthy black coffee sweetened with natural palm jaggery (karupatti) and
+                        spiced with dried ginger (sukku) and cardamoms.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Healthy Choice</span>
+                        <a href="#customizer" class="customize-link-btn" data-drink="karupatti-coffee">Customize <span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Rose Milk Cooler -->
+                <div class="menu-card" data-category="cold">
+                    <div class="menu-item-price">₹60</div>
+                    <h3 class="menu-item-title">Madras Rose Milk</h3>
+                    <p class="menu-item-desc">Nostalgic cooling beverage made with chilled milk, home-made organic rose
+                        petal syrup, and sweet soaked basil seeds (sabja).</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Classic Cooler</span>
+                        <a href="#customizer" class="customize-link-btn" data-drink="rose-milk">Customize <span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Sukku Malli Tea -->
+                <div class="menu-card" data-category="tea">
+                    <div class="menu-item-price">₹35</div>
+                    <h3 class="menu-item-title">Spiced Sukku Malli Tea</h3>
+                    <p class="menu-item-desc">A warming herbal blend of dry ginger (sukku) and coriander seeds (malli),
+                        sweetened with natural palm candy (panakalkandu).</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Herbal & Warm</span>
+                        <a href="#customizer" class="customize-link-btn" data-drink="sukku-tea">Customize <span
+                                class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Medhu Vadai -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-item-price">₹50</div>
+                    <h3 class="menu-item-title">Crispy Medhu Vadai</h3>
+                    <p class="menu-item-desc">Crisp, fluffy, donut-shaped lentil fritters seasoned with whole black
+                        pepper, fresh ginger, and green chilies. Served with coconut chutney.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Freshly Fried</span>
+                        <span class="bakery-only">Traditional Snack</span>
+                    </div>
+                </div>
+
+                <!-- Masala Vadai -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-item-price">₹45</div>
+                    <h3 class="menu-item-title">Crunchy Masala Vadai</h3>
+                    <p class="menu-item-desc">Spicy, deep-fried split pea fritters packed with chopped onions, coriander
+                        leaves, curry leaves, green chilies, and fennel seeds.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Crispy Delight</span>
+                        <span class="bakery-only">Traditional Snack</span>
+                    </div>
+                </div>
+
+                <!-- Kuzhi Paniyaram -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-item-price">₹60</div>
+                    <h3 class="menu-item-title">Golden Kuzhi Paniyaram</h3>
+                    <p class="menu-item-desc">Savory fermented rice-lentil batter balls pan-fried in cast-iron cavities
+                        with mustard seed tempering and chopped onions. Served with spicy tomato chutney.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Steamed & Pan-Fried</span>
+                        <span class="bakery-only">Traditional Snack</span>
+                    </div>
+                </div>
+
+                <!-- Murukku Basket -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-item-price">₹40</div>
+                    <h3 class="menu-item-title">Murukku & Mixture Platter</h3>
+                    <p class="menu-item-desc">A crispy serving of traditional hand-twisted butter murukku along with
+                        spicy South Indian curry leaf sev mixture.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-item-tag">Tea-time Essential</span>
+                        <span class="bakery-only">Traditional Snack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cup Customizer Section -->
+    <section id="customizer" class="customizer-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">Visual Brew Lab</span>
+                <h2 class="section-title">Design Your Perfect Cup</h2>
+                <p class="section-subtitle">Customize ingredients in real-time. Watch your cup fill up and see the exact
+                    pricing breakdown.</p>
+            </div>
+
+            <div class="customizer-grid">
+                <!-- Controls Panel -->
+                <div class="customizer-panel">
+                    <!-- Drink Base -->
+                    <div class="custom-group">
+                        <label class="custom-label">1. Select Your Base</label>
+                        <div class="custom-options" id="base-options">
+                            <button class="custom-opt-btn active" data-base="espresso" data-price="40">
+                                <span>Filter Coffee</span>
+                                <span class="opt-price">+₹40</span>
+                            </button>
+                            <button class="custom-opt-btn" data-base="matcha" data-price="35">
+                                <span>Sukku Tea</span>
+                                <span class="opt-price">+₹35</span>
+                            </button>
+                            <button class="custom-opt-btn" data-base="chocolate" data-price="50">
+                                <span>Rose Milk</span>
+                                <span class="opt-price">+₹50</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Milk Choice -->
+                    <div class="custom-group">
+                        <label class="custom-label">2. Choice of Milk</label>
+                        <div class="custom-options" id="milk-options">
+                            <button class="custom-opt-btn active" data-milk="whole" data-price="0">
+                                <span>Cow's Milk</span>
+                                <span class="opt-price">Free</span>
+                            </button>
+                            <button class="custom-opt-btn" data-milk="oat" data-price="25">
+                                <span>Badam Milk</span>
+                                <span class="opt-price">+₹25</span>
+                            </button>
+                            <button class="custom-opt-btn" data-milk="almond" data-price="25">
+                                <span>Almond Milk</span>
+                                <span class="opt-price">+₹25</span>
+                            </button>
+                            <button class="custom-opt-btn" data-milk="coconut" data-price="20">
+                                <span>Coconut Milk</span>
+                                <span class="opt-price">+₹20</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sweeteners & Syrups -->
+                    <div class="custom-group">
+                        <label class="custom-label">3. Select Sweetener</label>
+                        <div class="custom-options" id="syrup-options">
+                            <button class="custom-opt-btn active" data-syrup="none" data-price="0">
+                                <span>None</span>
+                                <span class="opt-price">Free</span>
+                            </button>
+                            <button class="custom-opt-btn" data-syrup="vanilla" data-price="10">
+                                <span>Karupatti</span>
+                                <span class="opt-price">+₹10</span>
+                            </button>
+                            <button class="custom-opt-btn" data-syrup="caramel" data-price="10">
+                                <span>White sugar</span>
+                                <span class="opt-price">+₹10</span>
+                            </button>
+                            <button class="custom-opt-btn" data-syrup="sugar" data-price="5">
+                                <span>Country Sugar</span>
+                                <span class="opt-price">+₹5</span>
+                            </button>
+                            <button class="custom-opt-btn" data-syrup="honey" data-price="15">
+                                <span>Local Honey</span>
+                                <span class="opt-price">+₹15</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Decoction Strength (Slider) -->
+                    <div class="custom-group" id="shots-slider-container">
+                        <div class="slider-label-row">
+                            <label class="custom-label">4. Decoction Strength</label>
+                            <span class="slider-value" id="shots-count">Double Decoction</span>
+                        </div>
+                        <input type="range" id="shots-range" min="1" max="4" value="2" step="1" class="custom-slider">
+                        <div class="slider-ticks">
+                            <span>Light</span>
+                            <span>Medium</span>
+                            <span>Strong</span>
+                            <span>Extra Strong</span>
+                        </div>
+                    </div>
+
+                    <!-- Total Price & Order -->
+                    <div class="customizer-summary">
+                        <div class="summary-line">
+                            <span>Subtotal:</span>
+                            <span class="summary-val" id="summary-base">₹40</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Add-ons:</span>
+                            <span class="summary-val" id="summary-addons">₹0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Total Price:</span>
+                            <span class="total-price-val" id="summary-total">₹40</span>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="btn-add-order">
+                            <span>Add Custom Brew to Order</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visual Preview Panel -->
+                <div class="customizer-preview-container">
+                    <div class="glass-cup-wrapper">
+                        <!-- The Cup Graphic -->
+                        <div class="glass-cup">
+                            <!-- Handle of the cup -->
+                            <div class="cup-handle"></div>
+
+                            <!-- Liquid Layers Container -->
+                            <div class="cup-liquids">
+                                <!-- Foam Layer (top) -->
+                                <div class="liquid-layer layer-foam" id="layer-foam">
+                                    <span class="layer-label">Micro-foam</span>
+                                </div>
+                                <!-- Milk Layer (middle) -->
+                                <div class="liquid-layer layer-milk" id="layer-milk">
+                                    <span class="layer-label">Whole Milk</span>
+                                </div>
+                                <!-- Base Liquid Layer (bottom) -->
+                                <div class="liquid-layer layer-base" id="layer-base">
+                                    <span class="layer-label">Espresso</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cup Stand shadow -->
+                        <div class="cup-stand"></div>
+                    </div>
+
+                    <!-- Dynamic Beverage Specs card -->
+                    <div class="drink-specs-card">
+                        <h3>Your Brew Recipe</h3>
+                        <ul class="specs-list" id="specs-list">
+                            <li><strong id="spec-base">Espresso Base</strong> (Single Shot)</li>
+                            <li><strong id="spec-milk">Whole Milk</strong></li>
+                            <li>No Sweetener Syrups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="section-container">
+            <div class="reservation-grid">
+                <!-- Info Side -->
+                <div class="reservation-info">
+                    <span class="section-tagline">Table Bookings</span>
+                    <h2 class="section-title">Reserve Your Cozy Corner</h2>
+                    <p class="reservation-desc">Avoid the wait and guarantee a perfect table. Whether you are scheduling
+                        a business brunch, a quiet afternoon work session, or a coffee date, we'll keep a spot warm for
+                        you.</p>
+
+                    <div class="info-block-list">
+                        <div class="info-block">
+                            <h4>Hours of Operation</h4>
+                            <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                            <p>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Find Us At</h4>
+                            <p>No. 51A, Thiruvalluvar Street</p>
+                            <p>Melur, Madurai - 625106</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>General Inquiries</h4>
+                            <p>Email: hello@friendscafe.com</p>
+                            <p>Phone: +91 9344407781</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="reservation-form-container">
+                    <form class="reservation-form" id="booking-form">
+                        <h3 class="form-title">Book a Table</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name" class="form-label">Full Name</label>
+                                <input type="text" id="booking-name" class="form-input" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email" class="form-label">Email Address</label>
+                                <input type="email" id="booking-email" class="form-input"
+                                    placeholder="yourname@domain.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-date" class="form-label">Select Date</label>
+                                <input type="date" id="booking-date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time" class="form-label">Select Time</label>
+                                <select id="booking-time" class="form-input select-input" required>
+                                    <option value="" disabled selected>Select time slot</option>
+                                    <option value="08:00">8:00 AM</option>
+                                    <option value="09:30">9:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:30">3:30 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-guests" class="form-label">Number of Guests</label>
+                                <select id="booking-guests" class="form-input select-input" required>
+                                    <option value="1">1 Person</option>
+                                    <option value="2" selected>2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5+ People (Group)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-notes" class="form-label">Special Requests (Optional)</label>
+                            <textarea id="booking-notes" class="form-input textarea-input"
+                                placeholder="E.g., Window seat, high chair, allergen alerts..." rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="booking-submit-btn">
+                            <span class="btn-text">Confirm Reservation</span>
+                            <span class="btn-loader hidden">
+                                <svg class="spinner" viewBox="0 0 50 50">
+                                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- Success State (Hidden initially) -->
+                    <div class="booking-success-message hidden" id="booking-success">
+                        <div class="success-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4AF37"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Reservation Confirmed!</h3>
+                        <p>Thank you for choosing Friends Cafe. A confirmation email and calendar invite have been sent
+                            to <strong id="success-email-val">your email</strong>.</p>
+                        <div class="receipt-summary">
+                            <p><strong>Name:</strong> <span id="success-name-val">-</span></p>
+                            <p><strong>Date:</strong> <span id="success-date-val">-</span></p>
+                            <p><strong>Time:</strong> <span id="success-time-val">-</span></p>
+                            <p><strong>Table for:</strong> <span id="success-guests-val">-</span></p>
+                        </div>
+                        <button class="btn btn-secondary btn-sm" id="btn-reset-booking">Book Another Table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">Client Voices</span>
+                <h2 class="section-title">What Our Patrons Say</h2>
+            </div>
+
+            <!-- Carousel Component -->
+            <div class="testimonials-carousel-wrapper">
+                <div class="carousel-container" id="carousel-container">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <p class="testimonial-text">"The Honey Lavender Latte here is pure art. Combine that with the
+                            soothing background music and the beautiful ambient design, and you have the perfect study
+                            escape. I'm here almost every weekend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-meta">
+                                <h4 class="author-name">Sophia Sterling</h4>
+                                <span class="author-title">Local Writer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"I love their cold brew, but the interactive customizer on this
+                            website actually convinced me to try a matcha oat latte with a honey drizzle. When I came to
+                            pick it up, it was made exactly to recipe. Excellent service."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-meta">
+                                <h4 class="author-name">Marcus Vance</h4>
+                                <span class="author-title">Software Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"Our corporate brunch booking was flawless. The booking system was
+                            incredibly simple, the staff was extremely friendly, and their almond croissants are
+                            honestly the best in the city. 10/10 recommendation!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">E</div>
+                            <div class="author-meta">
+                                <h4 class="author-name">Elena Rostova</h4>
+                                <span class="author-title">Creative Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="carousel-controls">
+                    <button class="carousel-control-btn" id="prev-slide" aria-label="Previous Testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="carousel-dot active" data-slide="0"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="2"></span>
+                    </div>
+                    <button class="carousel-control-btn" id="next-slide" aria-label="Next Testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Branding column -->
+                <div class="footer-col branding-col">
+                    <a href="#" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 36 36" width="36" height="36" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="18" r="16" stroke="rgba(212, 175, 55, 0.25)" stroke-dasharray="2.5 2.5">
+                            </circle>
+                            <path d="M14 19a3 3 0 0 1-3 3H9.5a3 3 0 0 1-3-3v-5h7.5v5z" fill="rgba(212, 175, 55, 0.08)">
+                            </path>
+                            <path d="M6.5 16H5a1.5 1.5 0 0 0-1.5 1.5v1A1.5 1.5 0 0 0 5 20h1.5"></path>
+                            <path d="M29.5 19a3 3 0 0 1-3 3h-1.5a3 3 0 0 1-3-3v-5h7.5v5z"
+                                fill="rgba(212, 175, 55, 0.08)"></path>
+                            <path d="M29.5 16h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1.5"></path>
+                            <path d="M13 11.5c0-2 2-3.5 5-1 3-2.5 5-1 5 1s-3 3-5 4c-2-1-5-2-5-4z" stroke="var(--accent)"
+                                stroke-width="1.8" fill="rgba(212, 175, 55, 0.12)"></path>
+                        </svg>
+                        <span>Friends <span class="logo-accent">Cafe</span></span>
+                    </a>
+                    <p class="footer-tagline">Crafting moments of comfort and artisan beverages for coffee aficionados
+                        and casual drinkers alike.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation column -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#customizer">Customizer</a></li>
+                        <li><a href="#reservation">Book Table</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location column -->
+                <div class="footer-col location-col">
+                    <h4 class="footer-col-title">Find Us</h4>
+                    <p class="address-line">No. 51A, Thiruvalluvar Street</p>
+                    <p class="address-line">Melur, Madurai - 625106</p>
+                    <p class="phone-line">T: +91 9344407781</p>
+                    <p class="email-line">E: hello@friendscafe.com</p>
+                </div>
+
+                <!-- Newsletter column -->
+                <div class="footer-col newsletter-col">
+                    <h4 class="footer-col-title">Join The Club</h4>
+                    <p>Subscribe to receive news of exclusive tasting events, new seasonal coffee beans, and promotional
+                        recipes.</p>
+                    <form class="newsletter-form" id="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Subscribed! Welcome to Friends Club.'); this.reset();">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Friends Cafe. All rights reserved. Crafted for visual elegance.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
